@@ -3,32 +3,60 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie Cards</title>
 		<link rel="stylesheet" href="style.css" />
-		<title>Projet</title>
 	</head>
 	<body>
-		<div id="container">
-			<div class="card-wrapper">
-				<div class="card">
-					<div class="image"></div>
-					<div class="presentation">
-						<h1>Lorem ipsum lorem</h1>
-						<div class="genres">
-							<p>Lorem</p>
-							<p>Ipsum</p>
-							<p>DETH</p>
+		<div class="projecteur">
+			<div class="couche-wrapper">
+				<div class="couche-1"></div>
+				<div class="couche-2"></div>
+				<div class="couche-3"></div>
+				<div class="couche-4"></div>
+			</div>
+		</div>
+		<div class="rideaux"></div>
+		<div class="container">
+			<div class="movie-card projector-hover">
+				<img src="damsel.jpg" alt="Movie 1" />
+			</div>
+			<div class="movie-card projector-hover">
+				<img src="damsel.jpg" alt="Movie 2" />
+			</div>
+			<div class="movie-card projector-hover">
+				<img src="damsel.jpg" alt="Movie 3" />
+			</div>
+			<div class="movie-card projector-hover">
+				<img src="damsel.jpg" alt="Movie 4" />
+			</div>
+		</div>
+		<div class="modal-overlay">
+			<div class="modal">
+				<span class="close">&times;</span>
+				<div class="film-container">
+					<div class="affiche-header">
+						<img src="damsel.jpg" alt="Affiche du film" />
+						<div class="header">
+							<h2>Titre du film</h2>
+							<p class="synopsis">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ad veniam eveniet est similique
+								consequatur sint nesciunt impedit, aperiam accusantium voluptas, officiis voluptate ipsam amet
+								voluptatem! Dolore aliquam et voluptates.
+							</p>
+							<p class="genres">Action, Aventure, Science-fiction</p>
 						</div>
-						<p class="synopsis">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque inventore minus excepturi, incidunt optio qui nostrum laudantium commodi, odit repudiandae dolor
-							tenetur illo maxime quas corporis similique repellat, sapiente corrupti.
-						</p>
-						<p class="details">Réaliser par : Jean-Louis X - 2024</p>
-						<a class="btn" href="./avis/premiere.html">Cliquer pour voir les avis</a>
 					</div>
+					<p class="notes">Notes : 4.5/5 ⭐⭐⭐⭐</p>
+					<section class="commentaires">
+						<h3>Commentaires sur le film</h3>
+						<div class="commentaire">
+							<p>Nom de l'utilisateur : Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						</div>
+						<!-- Ajoutez d'autres commentaires ici si nécessaire -->
+					</section>
 				</div>
 			</div>
 		</div>
-
 		<script src="main.js"></script>
 	</body>
 </html>
