@@ -1,7 +1,34 @@
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #2f3136;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #545a62;
+	border-radius: 10px;
+	border: 2px solid #2f3136;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5c606b;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #4a4f58;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	scrollbar-width: thin;
+	scrollbar-color: #252525 #434343;
 }
 
 body {
@@ -12,6 +39,7 @@ body {
 	max-width: 100vw;
 	max-height: 100vh;
 	overflow: hidden;
+	-ms-overflow-style: none;
 }
 
 .container {
@@ -63,18 +91,19 @@ body {
 
 .modal {
 	position: relative;
-	background-color: #333;
-	padding: 20px;
-	border-radius: 5px;
+	background-color: #252525;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.358);
 }
 
 .close {
 	position: absolute;
-	top: 5px;
-	right: 10px;
+	top: -35px;
+	right: -30px;
 	cursor: pointer;
-	color: #fff;
-	font-size: 20px;
+	color: #ff0000;
+	font-size: 40px;
 }
 
 .modal-content {
@@ -86,7 +115,7 @@ body {
 }
 
 .movie-card.projector-hover::before {
-	content: "";
+	content: '';
 	position: absolute;
 	top: -50%;
 	left: 50%;
@@ -161,12 +190,12 @@ body {
 	width: 100vw;
 	height: 100vh;
 
-	background: #1010106d;
+	background: #101010b5;
 	z-index: 10;
 
 	pointer-events: none;
 
-	transition: all 0.7s ease;
+	transition: opacity 0.7s ease;
 	opacity: 0;
 }
 
@@ -178,13 +207,16 @@ body {
 }
 
 .film-container {
-	padding: 40px;
-	max-height: 650px;
+	padding: 25px;
+	padding-bottom: 5px;
+	max-height: 665px;
 	max-width: 800px;
 	width: 800px;
 	overflow-y: auto;
 
 	font-size: 18px;
+
+	color: rgb(234, 234, 234);
 }
 
 .film-container .affiche-header {
@@ -212,7 +244,7 @@ body {
 }
 
 .film-container h2 {
-	font-size: 1.7em;
+	font-size: 2.2em;
 	margin-bottom: 15px;
 	text-align: center;
 }
@@ -221,12 +253,13 @@ body {
 	margin-bottom: 20px;
 	height: 200px;
 	text-indent: 50px;
+	padding: 1rem 0;
 }
 
 .film-container .genres {
 	text-align: right;
 	font-style: italic;
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 .film-container .notes {
@@ -239,12 +272,39 @@ body {
 }
 
 .film-container .commentaires h3 {
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-bottom: 10px;
 }
 
 .film-container .commentaire {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #cccccc3a;
 	padding-top: 10px;
 	margin-top: 10px;
+}
+
+.user-image {
+	max-width: 30px;
+	height: 30px !important;
+	aspect-ratio: 1/1;
+}
+
+.top_part {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.5rem;
+	padding: 0.8rem 0.2rem;
+
+	position: relative;
+}
+.note {
+	position: absolute;
+	right: 0.2rem;
+	font-size: 1rem;
+}
+
+.message {
+	text-indent: 50px;
+	padding: 0.1rem 1rem;
+	margin-bottom: 1.5rem;
 }
