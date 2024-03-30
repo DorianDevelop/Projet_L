@@ -99,11 +99,11 @@ body {
 
 .close {
 	position: absolute;
-	top: -35px;
-	right: -30px;
+	top: -16px;
+	right: -36px;
 	cursor: pointer;
 	color: #ff0000;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 .modal-content {
@@ -115,7 +115,7 @@ body {
 }
 
 .movie-card.projector-hover::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: -50%;
 	left: 50%;
@@ -135,7 +135,7 @@ body {
 	position: absolute;
 	top: -185px;
 
-	z-index: 5;
+	z-index: 15;
 	scale: 2;
 	pointer-events: none;
 	opacity: 0;
@@ -209,9 +209,8 @@ body {
 .film-container {
 	padding: 25px;
 	padding-bottom: 5px;
-	max-height: 665px;
-	max-width: 800px;
-	width: 800px;
+	max-height: 95vh;
+	width: 1000px;
 	overflow-y: auto;
 
 	font-size: 18px;
@@ -292,7 +291,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	padding: 0.8rem 0.2rem;
 
 	position: relative;
@@ -304,6 +303,7 @@ body {
 }
 
 .message {
+	font-size: 16px;
 	text-indent: 50px;
 	padding: 0.1rem 1rem;
 	margin-bottom: 1.5rem;
